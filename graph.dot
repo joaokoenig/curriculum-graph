@@ -94,6 +94,17 @@ strict digraph "curriculum-graph-compsci-ufsc" {
 
     // last cluster also holds general info
     subgraph cluster_8 {
+      license [
+        color="#00000000" labelloc="b"
+        fontsize="7pt" fontname=mono
+        label="gustavo.zambonin\nat grad.ufsc.br"
+      ];
+      cc[image="cclogo.svg" color="#00000000" label=""];
+      info [
+	labelloc="b" fontsize="7pt" label="UFSC/CTC/INE\nCiência da Computação\nÁrvore Curricular 2007/1"
+	color="#00000000"
+];
+      ufsclogo[image="logo-ufsc.svg" fixedsize=true height="1.8" label="" color="#00000000"];
       ine5434 [color=4 label="INE5434\nTCC II"];
       opt1 [fontsize="12pt" label="Optativas INE\n(288 h/a)"];
       opt2 [fontsize="12pt" label="Optativas ext.\n(144 h/a)"];
@@ -101,17 +112,7 @@ strict digraph "curriculum-graph-compsci-ufsc" {
 
       // label location parameters still make it overlap with the image,
       // so height is set manually
-      info [
-	labelloc="b" 
-	fontsize="7pt" height=2.35  label="UFSC/CTC/INE\nCiência da Computação\nÁrvore Curricular 2007/1"
-];
-	
 
-      license [
-        color="#00000000" labelloc="b"
-        fontsize="7pt" height=.75 fontname=mono image="cc-by-nc-sa.svg"
-        label="gustavo.zambonin\nat grad.ufsc.br"
-      ];
     }
   }
 
