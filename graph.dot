@@ -11,7 +11,7 @@ strict digraph "curriculum-graph-compsci-ufsc" {
 
   // set global style for nodes
   node [
-    width=1.4 height=.5 shape=box style=filled
+    width=1.4 height=.5 shape=box style="filled, rounded"
     fontname=Arial colorscheme=set36
   ];
 
