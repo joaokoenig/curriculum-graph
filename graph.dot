@@ -37,7 +37,6 @@ strict digraph "curriculum-graph-compsci-ufsc" {
       ine5401 [color=3 label="INE5401\nIntrodução"];
       ine5402 [color=4 label="INE5402\nPOO I"];
       ine5403 [color=1 label="INE5403\nMat. Discreta"];
-      mtm3100 [color=6 label="MTM3100\nPré-Cálculo"];
       mtm3110 [color=6 label="MTM3110\nCálculo 1"];
     }
 
@@ -45,9 +44,8 @@ strict digraph "curriculum-graph-compsci-ufsc" {
       ine5404 [color=4 label="INE5404\nPOO II"];
       ine5406 [color=5 label="INE5406\nSist. Digitais"];
       ine5407 [color=3 label="INE5407\nCTS"];
-      mtm3111 [color=6 label="MTM3111\nGA"];
       mtm3120 [color=6 label="MTM3120\nCálculo 2"];
-      mtm3121 [color=6 label="MTM3121\nAL"];
+      mtm3121 [color=6 label="MTM3121\nAlg. Linear"];
     }
 
     subgraph cluster_3 {
@@ -160,10 +158,8 @@ strict digraph "curriculum-graph-compsci-ufsc" {
 
   // the student may not need to take pre-calculus so the constraint is broken,
   // also it makes the graph prettier
-  mtm3100 -> mtm3110 [color=6, constraint=false];
   mtm3110 -> ine5405 [color=6];
   mtm3110 -> mtm3120 [color=6];
-  mtm3111 -> ine5202 [color=6];
   mtm3120 -> ine5202 [color=6];
   mtm3120 -> ine5420 [color=6];
   mtm3120 -> mtm3131 [color=6];
